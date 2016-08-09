@@ -13,7 +13,10 @@ var yyyy = today.getFullYear();
 if(dd<10){dd='0'+dd}
 if(mm<10){mm='0'+mm}
 today = mm+'/'+dd+'/'+yyyy;
+todayInput =  yyyy + '-' +mm+'-'+dd;
 dateSpan.innerHTML = today;
+
+document.getElementById('inputDate').value = todayInput;
 
 /**
  * Date now 
@@ -93,7 +96,8 @@ dateSpan.innerHTML = today;
     function capturePhotoWithFile() {
         navigator.camera.getPicture(onPhotoFileSuccess, onFail, { 
             quality: 50, 
-            destinationType: Camera.DestinationType.FILE_URI 
+            destinationType: Camera.DestinationType.FILE_URI,
+             saveToPhotoAlbum: true
         });
     }
     
