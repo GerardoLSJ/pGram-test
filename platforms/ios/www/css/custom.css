@@ -1,0 +1,28 @@
+/*
+*
+*Custom CSS
+*
+*/
+
+
+/*All icons*/
+
+
+@media screen and (min-height : 600px) and (max-height : 900px) {
+    i.big{
+    font-size: 80px;
+}
+}
+
+
+@media screen and (min-height : 250px) and (max-height : 599px) {
+i.big{
+    font-size: 50px;
+}
+}
+
+
+
+.center{
+  padding-top: 25vh;
+}
